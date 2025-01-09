@@ -28,12 +28,12 @@ jobs:
 
     - name: Lint with Pylint
       run: |
-        poetry run pylint calculator tests || true
+        make lint
 
     - name: Format with Black
       run: |
-        poetry run black --check calculator tests
+        make format
 
     - name: Run tests
       run: |
-        poetry run pytest
+        make test
