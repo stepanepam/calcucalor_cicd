@@ -2,7 +2,8 @@ lint:
 	poetry run pylint calculator_cicd tests || true
 
 format:
-	poetry run black calculator_cicd tests
+#	poetry run black calculator_cicd tests
+	poetry run black --check .
 
 test:
 	poetry run pytest

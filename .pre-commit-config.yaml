@@ -1,10 +1,10 @@
 repos:
   - repo: https://github.com/psf/black
-    rev: 23.1.0
+    rev: stable
     hooks:
       - id: black
         args:
-          - --config=./pyproject.toml
+          - --line-length=120
 
   - repo: https://github.com/PyCQA/pylint
     rev: v3.3.3
