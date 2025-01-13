@@ -8,6 +8,8 @@ repos:
     rev: v3.3.3
     hooks:
       - id: pylint
+        name: pylint
+        entry: poetry run pylint
         args:
           - --rcfile=./pyproject.toml
 
