@@ -20,21 +20,12 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.12'  
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install poetry
         poetry install
-
-    # - name: Run pre-commit hooks
-    #   run: poetry run pre-commit run --all-files  # Запускає всі pre-commit hooks (включаючи Black)
-
-    # - name: Format code with Black # (якщо потрібно)
-    #   run: poetry run black calculator tests  # Для автоматичного форматування, якщо хтось не використовував pre-commit
-
-    # - name: Lint with Pylint
-    #   run: |
-    #     make lint
 
     - name: Format with Black
       run: |
