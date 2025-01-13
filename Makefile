@@ -10,3 +10,6 @@ test:
 refactor: format lint
 
 all: lint format test  
+
+clean:
+	rm -rf .pytest_cache calculator_cicd/__pycache__ tests/__pycache__
