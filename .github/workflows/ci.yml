@@ -27,6 +27,10 @@ jobs:
         pip install poetry
         poetry install
 
+    - name: Run pre-commit 
+      run: |
+        poetry run pre-commit run --all-files
+
     - name: Format with Black
       run: |
         make format
