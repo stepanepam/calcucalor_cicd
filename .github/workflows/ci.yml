@@ -26,13 +26,6 @@ jobs:
         pip install poetry
         poetry install
 
-    - name: Install pre-commit
-      run: |
-        poetry run pip install pre-commit
-
-    - name: Install pre-commit hooks
-      run: poetry run pre-commit install  # Це встановлює pre-commit hooks у репозиторії
-
     - name: Run pre-commit hooks
       run: poetry run pre-commit run --all-files  # Запускає всі pre-commit hooks (включаючи Black)
 
