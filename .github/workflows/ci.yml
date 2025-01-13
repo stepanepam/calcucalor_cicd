@@ -59,8 +59,8 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ghcr.io/${{github.repository}}/python_calculator .
+        docker build -t ghcr.io/${{ github.repository }}/python_calculator .
 
     - name: Push Docker image to GHCR
       run: |
-        docker push ghcr.io/${{github.repository}}/python_calculator
+        docker push ghcr.io/${{ github.repository }}/python_calculator
