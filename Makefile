@@ -1,5 +1,5 @@
 lint:
-	poetry run pylint calculator_cicd tests || true
+	poetry run pylint .
 
 format:
 #	poetry run black calculator_cicd tests
