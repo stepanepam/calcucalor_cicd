@@ -12,3 +12,9 @@ repos:
       - id: pylint
         args:
           - --rcfile=./pyproject.toml
+
+  - repo: https://github.com/sirosen/check-jsonschema
+    rev: 0.28.2
+    hooks:
+      - id: check-github-actions
+      - id: check-github-workflows
