@@ -59,7 +59,7 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t ghcr.io/${{ github.repository }}/python_calculator .
+        docker build --label "org.opencontainers.image.source=https://github.com/${{ github.repository }}" -t ghcr.io/${{ github.repository }}/python_calculator .
 
     - name: Push Docker image to GHCR
       run: |
