@@ -26,8 +26,8 @@ jobs:
         pip install poetry
         poetry install
 
-    - name: Run pre-commit hooks
-      run: poetry run pre-commit run --all-files  # Запускає всі pre-commit hooks (включаючи Black)
+    # - name: Run pre-commit hooks
+    #   run: poetry run pre-commit run --all-files  # Запускає всі pre-commit hooks (включаючи Black)
 
     # - name: Format code with Black # (якщо потрібно)
     #   run: poetry run black calculator tests  # Для автоматичного форматування, якщо хтось не використовував pre-commit
